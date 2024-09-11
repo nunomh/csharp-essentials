@@ -42,6 +42,14 @@ namespace CsTutorial_freeCodeCamp
             arrayOfStrings2[1] = "asd";
             Console.WriteLine(arrayOfStrings2[0]);
 
+            // Multi dimentional Arrays
+            int[,] numberGrid =
+            {
+                {1, 2},
+                {3, 4},
+                {5, 6}
+            };
+            Console.WriteLine(numberGrid[0,0]);
 
             // Methods
             simpleMethod("John");
@@ -80,6 +88,43 @@ namespace CsTutorial_freeCodeCamp
                 Console.WriteLine(index);
                 index++;
             } while (index <= 0);
+
+
+            // For loop
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            // Error handling
+            try
+            {
+
+            }
+            catch (DivideByZeroException ex) // captar uma excepção especifica
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+            finally // executa sempre não impora exista erro ou não
+            {
+
+            }
+
+            // Classes and Objects
+            // Classe é a definição do objecto (ver classe Book.cs)
+            // Objecto é uma instancia da classe
+            Book book1 = new Book();
+            book1.title = "Harry Potter";
+            book1.author = "JKR";
+            book1.pages = 400;
+            Console.WriteLine(book1.title);
+
+            // Constructor
+            // é chamado no new Movie(), irá chamar o metodo Movie() dentro da classe
+            Movie movie1 = new Movie("HP", "JKR");
 
             Console.ReadLine();
         }
