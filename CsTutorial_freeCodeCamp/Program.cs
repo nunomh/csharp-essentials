@@ -124,7 +124,30 @@ namespace CsTutorial_freeCodeCamp
 
             // Constructor
             // é chamado no new Movie(), irá chamar o metodo Movie() dentro da classe
-            Movie movie1 = new Movie("HP", "JKR");
+            Movie movie1 = new Movie("HP", "JKR", 8);
+
+            bool test = movie1.TestMethod(); // Object Method
+
+            // Getters and Setters
+            Videogame game1 = new Videogame("Zelda", "PG");
+            Console.WriteLine(game1.Rating);
+            
+            // Static Class Attribute
+            Song song1 = new Song("Holiday", "Green Day");
+            Song song2 = new Song("American Idiot", "Green Day");
+            Console.WriteLine(Song.songCount); // 2
+
+            // Static Method
+            // ex.
+            Console.WriteLine(Math.Sqrt(144)); // Math é a classe, Sqrt é o metodo. Não foi necessário iniciar a classe
+            // ex.2
+            UsefulTools.SayHi("John");
+
+            // Inheritance
+            // MetalSong herda name, artist e songCount da classe Song
+            MetalSong metalSong1 = new MetalSong("Sad But True", "Mettalica", "Metal");
+            Console.WriteLine(Song.songCount);
+            // nota: metodos podem ser override caso o child queira ter um metodo diferente com o mesmo nome, usar virtual no parent e override no child
 
             Console.ReadLine();
         }

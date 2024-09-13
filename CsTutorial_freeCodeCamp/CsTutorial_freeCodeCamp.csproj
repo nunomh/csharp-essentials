@@ -44,9 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Book.cs" />
+    <Compile Include="MetalSong.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Song.cs" />
+    <Compile Include="UsefulTools.cs" />
+    <Compile Include="Videogame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
