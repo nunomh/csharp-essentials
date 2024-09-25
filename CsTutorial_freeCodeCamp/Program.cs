@@ -149,6 +149,13 @@ namespace CsTutorial_freeCodeCamp
             Console.WriteLine(Song.songCount);
             // nota: metodos podem ser override caso o child queira ter um metodo diferente com o mesmo nome, usar virtual no parent e override no child
 
+
+            // Namespaces
+            // Namespaces são como containers para agrupar classes. Um namespace pode estar dentro de outro namespace parent.
+            // Exemplo: MyCompany.MyApp.Product (em que Product é a classe)
+            // Não é obrigatório, mas para importar namespaces usar "using MyCompany.MyApp" no inicio do ficheiro - neste caso a classe Product seria apenas
+            // Product e não MyCompany.MyApp.Product
+
             Console.ReadLine();
         }
 
